@@ -4,13 +4,6 @@ name: Slack emoji PR updates
 on: [push]
 
 jobs:
-  run_slapr_agent_integrations:
-    runs-on: ubuntu-latest
-    steps:
-    - uses: DataDog/slapr@master
-      env:
-        GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
-
   run_slapr_infra_integrations:
     runs-on: ubuntu-latest
     steps:
