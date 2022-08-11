@@ -1,11 +1,7 @@
 # https://github.com/DataDog/slapr
 
 name: Slack emoji PR updates
-on:
-  pull_request_review:
-    types: [submitted]
-  pull_request:
-    types: [closed]
+on: [push]
 
 jobs:
   run_slapr_agent_integrations:
